@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <p th:text="${data}">Hello Thymeleaf!!!</p>
+
+    <p th:text="'Hello' + 'World!'"></p>
+    <p th:text="'Hello World!'"></p>
+    <p th:text="'Hello' + ${data}"></p>
+    <p th:text="|Hello ${data}|"></p>
+    <br>
+    [[${data}]]
+</body>
+</html>
