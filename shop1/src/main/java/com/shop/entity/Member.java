@@ -41,7 +41,7 @@ public class Member  extends BaseEntity{
                 .email(memberFormDto.getEmail())
                 .address(memberFormDto.getAddress())
                 .password(passwordEncoder.encode(memberFormDto.getPassword()))
-                .role(Role.ADMIN)
+                .role(Role.USER)
                 .build();
     }
 

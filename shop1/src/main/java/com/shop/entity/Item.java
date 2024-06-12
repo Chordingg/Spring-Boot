@@ -16,6 +16,7 @@ import java.time.LocalDateTime;
 public class Item extends BaseEntity {
 
     @Id
+    @Column(name = "item_id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
@@ -23,10 +24,10 @@ public class Item extends BaseEntity {
     private String itemNm;   //item_Nm
 
     @Column(name = "price", nullable = false)
-    private  int price;   //price
+    private int price;   //price
 
     @Column(nullable = false)
-    private  int stoackNumber; //stoack_number
+    private int stockNumber; //stock_number
 
     @Lob
     @Column(nullable = false)

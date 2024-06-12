@@ -12,7 +12,7 @@ import javax.persistence.MappedSuperclass;
 import java.time.LocalDateTime;
 
 @EntityListeners(value = {AuditingEntityListener.class})
-@MappedSuperclass
+@MappedSuperclass   
 @Getter@Setter
 public abstract class BaseTimeEntity {
 
@@ -20,7 +20,7 @@ public abstract class BaseTimeEntity {
     @Column(updatable = false)
     private LocalDateTime regTime;
 
-    @LastModifiedDate
+    @LastModifiedDate   // 엔티티의 값을 변경할 때 시간을 자동적으로 저장
     private LocalDateTime updateTime;
 
 }

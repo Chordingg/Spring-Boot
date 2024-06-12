@@ -147,7 +147,7 @@ class ItemRepositoryTest {
         item.setPrice(1500);
         item.setItemDetail("라면 상세 설명2");
         item.setItemSellStatus(ItemSellStatus.SELL);
-        item.setStoackNumber(100);
+        item.setStockNumber(100);
         item.setRegTime(LocalDateTime.now());
         item.setUpdateTime(LocalDateTime.now());
 
@@ -217,7 +217,7 @@ class ItemRepositoryTest {
             item.setPrice(10000 + i);
             item.setItemDetail("테스트 상품 상세 설명" + i);
             item.setItemSellStatus(ItemSellStatus.SELL);
-            item.setStoackNumber(100);
+            item.setStockNumber(100);
             item.setRegTime(LocalDateTime.now());
             item.setUpdateTime(LocalDateTime.now());
             itemRepository.save(item);
@@ -229,7 +229,7 @@ class ItemRepositoryTest {
             item.setPrice(10000 + i);
             item.setItemDetail("테스트 상품 상세 설명" + i);
             item.setItemSellStatus(ItemSellStatus.SOLD_OUT);
-            item.setStoackNumber(0);
+            item.setStockNumber(0);
             item.setRegTime(LocalDateTime.now());
             item.setUpdateTime(LocalDateTime.now());
             itemRepository.save(item);

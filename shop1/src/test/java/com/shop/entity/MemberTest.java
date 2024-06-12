@@ -28,7 +28,7 @@ class MemberTest {
 
     @Test
     @DisplayName("Auditing 테스트")
-    @WithMockUser(username = "gildong", roles = "USER")
+    @WithMockUser(username = "gildong", roles = "USER") // 스프링 시큐리티에서 제공하는 어노테이션, 로그인 상태라고 가정하고 테스트 실행
     public void auditingTest(){
 
         Member newMember = new Member();

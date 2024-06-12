@@ -11,8 +11,7 @@ import java.util.Optional;
 public class AuditorAwareImpl implements AuditorAware<String> {
     @Override
     public Optional<String> getCurrentAuditor() {
-        Authentication authentication =
-                SecurityContextHolder.getContext().getAuthentication();
+        Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
 
         log.info("==========================================");
         log.info("Current user: " + authentication.getName());  // Auditing 기능을 사용하기 위해서 Config 파일을 생성
