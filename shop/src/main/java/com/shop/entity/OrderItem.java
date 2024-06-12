@@ -16,12 +16,12 @@ public class OrderItem {
     private Long id;
 
     @ManyToOne
-    @JoinColumn(name = "order_id") // 외래키 설정
-    private Order order;
-
-    @ManyToOne
     @JoinColumn(name = "item_id")
     private Item item;
+
+    @ManyToOne
+    @JoinColumn(name = "order_id") // 외래키 설정
+    private Order order;
 
     private int orderPrice; // 가격
 

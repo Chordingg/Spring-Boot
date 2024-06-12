@@ -55,8 +55,11 @@ class CartTest {
 //        entityManager.flush();
 //        entityManager.clear();
 
+        // 저장된 장바구니 엔티티를 조회
         Cart savedCart = cartRepository.findById(cart.getId()).orElseThrow(()-> new EntityNotFoundException());
 
+        // 처음에 저장한 member 엔티티의 id 와 savedCart 에 매핑된 member 엔티티의 id 를 비교
+        
         assertEquals(savedCart.getMember().getId(), member.getId());
 
     }

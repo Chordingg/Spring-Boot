@@ -1,2 +1,4 @@
-package com.shop.entity;public class BaseEntity {
+package com.shop.entity;
+
+public class BaseEntity {
 }
