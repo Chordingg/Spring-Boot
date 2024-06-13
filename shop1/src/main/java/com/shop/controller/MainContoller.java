@@ -9,6 +9,7 @@ public class MainContoller {
 
     @GetMapping("/")
     public String main(){
+
         return "main";
     }
 }
