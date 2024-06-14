@@ -8,6 +8,7 @@
 
   <script th:inline="javascript">
     $(document).ready(function(){
+      // 상품 등록 시 실패 메시지를 받아서 상품 등록 페이지에 재진입 시 alert 를 통해서 메세지를 띄어줌
       var errorMessage = [[${errorMessage}]];
       if(errorMessage != null){
         alert(errorMessage);
@@ -28,6 +29,7 @@
           return;
         }
 
+        // label 태그 안의 내용을 jquery 의 .html() 을 이용하여 파일명을 입력
         $(this).siblings(".custom-file-label").html(fileName);
       });
     }

@@ -13,10 +13,6 @@ public class AuditorAwareImpl implements AuditorAware<String> {
     public Optional<String> getCurrentAuditor() {
         Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
 
-        log.info("==========================================");
-        log.info("Current user: " + authentication.getName());  // Auditing 기능을 사용하기 위해서 Config 파일을 생성
-        log.info("==========================================");
-
         String userId = "";
 
         if(authentication != null){

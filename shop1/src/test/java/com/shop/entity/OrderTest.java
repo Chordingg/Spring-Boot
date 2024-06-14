@@ -46,7 +46,7 @@ class OrderTest {
 
         Order order = this.createOrder();
 
-        Long orderItemId = order.getOderItems().get(0).getId();
+        Long orderItemId = order.getOrderItems().get(0).getId();
 
         em.flush();
         em.clear();
@@ -71,7 +71,7 @@ class OrderTest {
             orderItem.setCount(10);
             orderItem.setOrderPrice(100);
             orderItem.setOrder(order);
-            order.getOderItems().add(orderItem);
+            order.getOrderItems().add(orderItem);
         }
 
         Member member = new Member();
@@ -87,7 +87,7 @@ class OrderTest {
     public void orphanRemovealTest(){
         Order order = this.createOrder();
 
-        order.getOderItems().remove(0);
+        order.getOrderItems().remove(0);
         em.flush();
     }
 
@@ -120,7 +120,7 @@ class OrderTest {
             orderItem.setCount(10);
             orderItem.setOrderPrice(1000);
             orderItem.setOrder(order);
-            order.getOderItems().add(orderItem);
+            order.getOrderItems().add(orderItem);
         }
 
         orderRepository.saveAndFlush(order);
@@ -129,9 +129,9 @@ class OrderTest {
         Order savedOrder = orderRepository.findById(order.getId())
                 .orElseThrow(()->new EntityNotFoundException());
 
-        log.info("======> " + savedOrder.getOderItems().size());
+        log.info("======> " + savedOrder.getOrderItems().size());
 
-        assertEquals(3, savedOrder.getOderItems().size());
+        assertEquals(3, savedOrder.getOrderItems().size());
     }
 
 
