@@ -6,7 +6,20 @@
 
 ***
 
+# 스프링 부트 쇼핑몰 프로젝트 JPA
+
+## 프로젝트 개요
+이 프로젝트는 스프링 부트를 사용하여 기본적인 쇼핑몰 애플리케이션을 구현합니다. JPA를 이용하여 데이터베이스와 상호작용하며, MySQL을 데이터베이스로 사용합니다.
+
+## 설정
+- **Spring Boot Version**: 2.7.1
+- **Java Version**: 11
+
+  <hr>
+  <br><br>
+
 <h2>1. DB설정(mysql) </h2>
+
 
 ```db
 create database member default character set utf8 collate utf8_general_ci;
