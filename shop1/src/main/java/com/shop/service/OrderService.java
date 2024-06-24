@@ -39,7 +39,6 @@ public class OrderService {
 
         Member member = memberRepository.findByEmail(email); // 현재 로그인한 회원의 이메일 정보를 이용해서 회원 정보 조회
 
-
         List<OrderItem> orderItemList = new ArrayList<>();
 
         OrderItem orderItem = OrderItem.createOrderItem(item, orderDto.getCount()); // 주문할 상품 엔티티와 주문 수량을 이용하여 주문 상품 엔티티 생성
