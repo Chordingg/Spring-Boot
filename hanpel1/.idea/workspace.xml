@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b0e4f876-b789-4d32-bd76-d68651518b25" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../hanpel/src/main/java/com/hanpel/config/AuditConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hanpel/src/main/java/com/hanpel/config/AuditorAwareImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hanpel/src/main/java/com/hanpel/config/CustomAuthticationEntryPoint.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hanpel/src/main/java/com/hanpel/config/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hanpel/src/main/java/com/hanpel/config/WebMvcConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hanpel/src/main/java/com/hanpel/constant/ItemSellStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hanpel/src/main/java/com/hanpel/constant/OrderStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hanpel/src/main/java/com/hanpel/constant/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hanpel/src/main/java/com/hanpel/controller/ItemController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hanpel/src/main/java/com/hanpel/controller/MainController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hanpel/src/main/java/com/hanpel/controller/MemberController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hanpel/src/main/java/com/hanpel/controller/OrderController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hanpel/src/main/java/com/hanpel/controller/ThymeleafExController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hanpel/src/main/java/com/hanpel/dto/ItemDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hanpel/src/main/java/com/hanpel/dto/ItemFormDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hanpel/src/main/java/com/hanpel/dto/ItemImgDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hanpel/src/main/java/com/hanpel/dto/ItemSearchDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hanpel/src/main/java/com/hanpel/dto/MainItemDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hanpel/src/main/java/com/hanpel/dto/MemberFormDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hanpel/src/main/java/com/hanpel/dto/OrderDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hanpel/src/main/java/com/hanpel/dto/OrderHistDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hanpel/src/main/java/com/hanpel/dto/OrderItemDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hanpel/src/main/java/com/hanpel/entity/BaseEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hanpel/src/main/java/com/hanpel/entity/BaseTimeEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hanpel/src/main/java/com/hanpel/entity/Cart.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hanpel/src/main/java/com/hanpel/entity/CartItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hanpel/src/main/java/com/hanpel/entity/Item.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hanpel/src/main/java/com/hanpel/entity/ItemImg.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hanpel/src/main/java/com/hanpel/entity/Member.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hanpel/src/main/java/com/hanpel/entity/Order.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hanpel/src/main/java/com/hanpel/entity/OrderItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hanpel/src/main/java/com/hanpel/exception/OutOfStockException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hanpel/src/main/java/com/hanpel/repository/CartRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hanpel/src/main/java/com/hanpel/repository/ItemImgRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hanpel/src/main/java/com/hanpel/repository/ItemRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hanpel/src/main/java/com/hanpel/repository/ItemRepositoryCustom.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hanpel/src/main/java/com/hanpel/repository/ItemRepositoryCustomImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hanpel/src/main/java/com/hanpel/repository/MemberRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hanpel/src/main/java/com/hanpel/repository/OrderItemRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hanpel/src/main/java/com/hanpel/repository/OrderRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hanpel/src/main/java/com/hanpel/service/FileService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hanpel/src/main/java/com/hanpel/service/ItemImgService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hanpel/src/main/java/com/hanpel/service/ItemService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hanpel/src/main/java/com/hanpel/service/MemberService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hanpel/src/main/java/com/hanpel/service/OrderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hanpel/src/main/resources/static/css/layout1.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hanpel/src/main/resources/templates/fragments/footer.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hanpel/src/main/resources/templates/fragments/header.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hanpel/src/main/resources/templates/item/itemDtl.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hanpel/src/main/resources/templates/item/itemForm.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hanpel/src/main/resources/templates/item/itemMng.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hanpel/src/main/resources/templates/layouts/layout1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hanpel/src/main/resources/templates/main.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hanpel/src/main/resources/templates/member/memberForm.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hanpel/src/main/resources/templates/member/memberLoginForm.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hanpel/src/main/resources/templates/order/orderHist.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hanpel/src/main/resources/templates/thymeleaf/thymeleafEx01.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hanpel/src/main/resources/templates/thymeleaf/thymeleafEx02.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hanpel/src/main/resources/templates/thymeleaf/thymeleafEx03.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hanpel/src/main/resources/templates/thymeleaf/thymeleafEx04.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hanpel/src/main/resources/templates/thymeleaf/thymeleafEx05.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hanpel/src/main/resources/templates/thymeleaf/thymeleafEx07.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hanpel/src/main/resources/templates/thymeleaf/thymeleafEx07_.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hanpel/src/main/resources/templates/thymeleaf/thymeleafEx09.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hanpel/src/test/java/com/hanpel/entity/CartTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hanpel/src/test/java/com/hanpel/entity/MemberTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hanpel/src/test/java/com/hanpel/entity/OrderItemTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hanpel/src/test/java/com/hanpel/entity/OrderTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hanpel/src/test/java/com/hanpel/repository/ItemRepositoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hanpel/src/test/java/com/hanpel/service/ItemServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hanpel/src/test/java/com/hanpel/service/MemberServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hanpel/src/test/java/com/hanpel/service/OrderServiceTest.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="Enum" />
+        <option value="Interface" />
+        <option value="JUnit5 Test Class" />
+        <option value="Class" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="2hOWYb8s3nvdEcGLZK9cagyoNJ9" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "JUnit.CartTest.findCartAndMemberTest.executor": "Run",
+    "JUnit.ItemRepositoryTest.createItemTest.executor": "Run",
+    "JUnit.ItemRepositoryTest.findByIdTest.executor": "Run",
+    "JUnit.ItemRepositoryTest.findByItemDetailTest.executor": "Run",
+    "JUnit.ItemRepositoryTest.findByItemNmAndItemDetailTest.executor": "Run",
+    "JUnit.ItemRepositoryTest.findByNameTest.executor": "Run",
+    "JUnit.ItemRepositoryTest.findByPriceTest.executor": "Run",
+    "JUnit.ItemRepositoryTest.queryDslTest.executor": "Run",
+    "JUnit.ItemRepositoryTest.queryDslTest2.executor": "Run",
+    "JUnit.ItemRepositoryTest.queryDslTest4.executor": "Run",
+    "JUnit.ItemRepositoryTest.queryDslTest5.executor": "Run",
+    "JUnit.ItemServiceTest.saveItem.executor": "Run",
+    "JUnit.MemberServiceTest.saveDuplicateMemberTest.executor": "Run",
+    "JUnit.MemberServiceTest.saveMemberTest.executor": "Run",
+    "JUnit.MemberTest.auditingTest.executor": "Run",
+    "JUnit.OrderItemTest.test.executor": "Run",
+    "JUnit.OrderServiceTest.order.executor": "Run",
+    "JUnit.OrderTest.cacadeTest.executor": "Run",
+    "JUnit.OrderTest.lazyLoadindTest.executor": "Run",
+    "JUnit.OrderTest.orphanRemovealTest.executor": "Run",
+    "Maven.shop [clean].executor": "Run",
+    "Maven.shop [compile].executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Spring Boot.ShopApplication.executor": "Run",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Java/boot/hanpel1",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.09664848",
+    "settings.editor.selected.configurable": "project.kotlinCompiler",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ]
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Java2\boot2\shop\src\main\resources\templates\thymeleaf" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.shop.service" />
+      <recent name="com.shop.entity" />
+      <recent name="com.shop.repository" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.shop.entity" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.ShopApplication">
+    <configuration name="ItemServiceTest.saveItem" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="shop" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.shop.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.shop.service" />
+      <option name="MAIN_CLASS_NAME" value="com.shop.service.ItemServiceTest" />
+      <option name="METHOD_NAME" value="saveItem" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MemberTest.auditingTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="shop" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.shop.entity.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.shop.entity" />
+      <option name="MAIN_CLASS_NAME" value="com.shop.entity.MemberTest" />
+      <option name="METHOD_NAME" value="auditingTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OrderServiceTest.order" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="shop" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.shop.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.shop.service" />
+      <option name="MAIN_CLASS_NAME" value="com.shop.service.OrderServiceTest" />
+      <option name="METHOD_NAME" value="order" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OrderTest.lazyLoadindTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="shop" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.shop.entity.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.shop.entity" />
+      <option name="MAIN_CLASS_NAME" value="com.shop.entity.OrderTest" />
+      <option name="METHOD_NAME" value="lazyLoadindTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OrderTest.orphanRemovealTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="shop" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.shop.entity.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.shop.entity" />
+      <option name="MAIN_CLASS_NAME" value="com.shop.entity.OrderTest" />
+      <option name="METHOD_NAME" value="orphanRemovealTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ShopApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="shop" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.shop.ShopApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.OrderServiceTest.order" />
+        <item itemvalue="JUnit.OrderTest.lazyLoadindTest" />
+        <item itemvalue="JUnit.ItemServiceTest.saveItem" />
+        <item itemvalue="JUnit.MemberTest.auditingTest" />
+        <item itemvalue="JUnit.OrderTest.orphanRemovealTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.17011.79" />
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.17011.79" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b0e4f876-b789-4d32-bd76-d68651518b25" name="Changes" comment="" />
+      <created>1717465652462</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1717465652462</updated>
+      <workItem from="1717465653759" duration="14178000" />
+      <workItem from="1717546546985" duration="2565000" />
+      <workItem from="1717550550266" duration="21101000" />
+      <workItem from="1717719511269" duration="11160000" />
+      <workItem from="1717979721793" duration="20096000" />
+      <workItem from="1718007442020" duration="1178000" />
+      <workItem from="1718066141194" duration="4666000" />
+      <workItem from="1718072551215" duration="7676000" />
+      <workItem from="1718089183884" duration="3287000" />
+      <workItem from="1718097447091" duration="97000" />
+      <workItem from="1718153314195" duration="12504000" />
+      <workItem from="1718169436341" duration="14984000" />
+      <workItem from="1718238992219" duration="652000" />
+      <workItem from="1718239670212" duration="17802000" />
+      <workItem from="1718266904231" duration="2872000" />
+      <workItem from="1718325161402" duration="10731000" />
+      <workItem from="1718336203866" duration="13069000" />
+      <workItem from="1718351152930" duration="4182000" />
+      <workItem from="1719189412451" duration="940000" />
+      <workItem from="1719190625219" duration="32000" />
+      <workItem from="1719191733990" duration="14000" />
+      <workItem from="1719193414716" duration="26000" />
+      <workItem from="1719193455995" duration="34000" />
+      <workItem from="1719194414150" duration="33000" />
+      <workItem from="1719206765196" duration="3980000" />
+      <workItem from="1719211168082" duration="799000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
