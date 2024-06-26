@@ -2,9 +2,11 @@ package com.donation.dto;
 
 import com.donation.entity.Article;
 import lombok.AllArgsConstructor;
-import lombok.ToString;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
-@ToString
+@Data
+@NoArgsConstructor
 @AllArgsConstructor // 매개변수 생성자 자동 생성
 public class ArticleForm {
 

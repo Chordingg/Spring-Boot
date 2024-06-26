@@ -3,12 +3,15 @@ package com.donation.service;
 import com.donation.dto.ArticleForm;
 import com.donation.entity.Article;
 import com.donation.repository.ArticleRepository;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 import java.util.stream.Collectors;
 
+@Slf4j
 @Service
 public class ArticleService {
 
@@ -24,6 +27,7 @@ public class ArticleService {
     }
 
     public Article create(ArticleForm articleForm){
+
         Article article = articleForm.toEntity(); // DTO -> Entity 로 변환 후 article 에 저장
 
         if(article.getId() != null){
@@ -36,6 +40,7 @@ public class ArticleService {
 
         // 1. DTO -> Entity 변환
         Article article = articleForm.toEntity();
+        log.info("id: {}, article: {}", id, article.toString());
 
         // 2. 타깃 조회하기
         Article targerArticle = articleRepository.findById(id).orElse(null);
@@ -43,15 +48,16 @@ public class ArticleService {
         // 3. 잘못된 요청 처리하기
         if(targerArticle == null || id != article.getId()){
             // 400, 잘못된 요청 응답!
+            log.info("잘못된 요청! id: {}, article: {}", id, article.toString());
             return null;
 
         }
         // 4. 업데이트 및 정상 응답(200)
         targerArticle.patch(article);
 
-        Article updatedArticle = articleRepository.save(targerArticle);
+        Article updated = articleRepository.save(targerArticle);
 
-        return updatedArticle;
+        return updated;
     }
 
     public Article delete(Long id) {
@@ -70,6 +76,7 @@ public class ArticleService {
 
     }
 
+    @Transactional
     public List<Article> createArticles(List<ArticleForm> articleForms){
 
         // 1. DTO 묶음을 Entity 묶음으로 변환

@@ -1,8 +1,10 @@
 package com.donation.controller;
 
 import com.donation.dto.ArticleForm;
+import com.donation.dto.CommentDto;
 import com.donation.entity.Article;
 import com.donation.repository.ArticleRepository;
+import com.donation.service.CommentService;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -20,6 +22,9 @@ public class ArticleController {
 
     @Autowired // 스프링 부트가 미리 생성해 놓은 Repository 객체 주입 (DI)
     private ArticleRepository articleRepository;
+
+    @Autowired
+    private CommentService commentService;
 
     @GetMapping("/articles/new")
     public String newArticleForm(){
@@ -50,9 +55,11 @@ public class ArticleController {
 
         // 1. id를 조회해 데이터 가져오기
         Article articleEntity = articleRepository.findById(id).orElse(null);
+        List<CommentDto> commentDtos = commentService.comments(id);
 
         // 2. 모델에 데이터 등록하기
         model.addAttribute("article", articleEntity);
+        model.addAttribute("commentsDtos", commentDtos);
 
         // 3. 뷰 페이지 설정하기
         return "articles/show";
