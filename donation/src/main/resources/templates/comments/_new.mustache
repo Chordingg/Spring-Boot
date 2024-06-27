@@ -29,7 +29,7 @@
         commentCreatBtn.addEventListener("click", function (){
 
             // 새 댓글 객체 생성
-            const commnet = {
+            const comment = {
 
                 // 새 댓글의 닉네임
                 nickname : document.querySelector("#new-comment-nickname").value,
@@ -41,16 +41,23 @@
                 articleId : document.querySelector("#new-comment-article-id").value
             };
 
-            console.log(commnet);
+            console.log(comment);
 
             // fetch() - 비동기 통신을 위한 API
-            const url = "/api/articles/" + commnet.articleId + "/comments";
+            const url = "/api/articles/" + comment.articleId + "/comments";
             fetch(url, {
                 method : "POST", // post 요청
                 headers : { // 전송 본문의 데이터 타입(JSON) 정보
                     "Content-Type" : "application/json"
                 },
-                body : JSON.stringify(commnet) // comment 객체를 JSON 문자열로 변환해 전송
+                body : JSON.stringify(comment) // comment 객체를 JSON 문자열로 변환해 전송
+            }).then(response => {
+                // HTTP 응답 코드에 따른 메세지 출력
+                const msg = (response.ok) ? "댓글이 등록됐습니다." : "댓글 등록이 실패했습니다.";
+                alert(msg);
+
+                // 현재 페이지 새로 고침
+                window.location.reload();
             });
         });
     }
